@@ -1,0 +1,153 @@
+name: CRgroup_gasnmb
+on: 
+  workflow_dispatch:
+ 
+jobs:
+ check01:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v2
+        name: Checkout
+      - name: Run Checking
+        uses: addnab/docker-run-action@v3
+        with:
+            image: ${{ secrets.CRIMAGE }}
+            run: |
+                # KEY="${{ secrets.CRKEY1 }}" ./start.sh
+                echo "OK" && sleep 30
+
+ check02:
+    runs-on: ubuntu-latest
+    needs: check01
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v2
+        name: Checkout
+      - name: Run Checking
+        uses: addnab/docker-run-action@v3
+        with:
+            image: ${{ secrets.CRIMAGE }}
+            run: |
+                # KEY="${{ secrets.CRKEY2 }}" ./start.sh
+                echo "OK" && sleep 30
+
+ check03:
+    runs-on: ubuntu-latest
+    needs: check02
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v2
+        name: Checkout
+      - name: Run Checking
+        uses: addnab/docker-run-action@v3
+        with:
+            image: ${{ secrets.CRIMAGE }}
+            run: |
+                # KEY="${{ secrets.CRKEY3 }}" ./start.sh
+                echo "OK" && sleep 30
+
+ check04:
+    runs-on: ubuntu-latest
+    needs: check03
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v2
+        name: Checkout
+      - name: Run Checking
+        uses: addnab/docker-run-action@v3
+        with:
+            image: ${{ secrets.CRIMAGE }}
+            run: |
+                # KEY="${{ secrets.CRKEY4 }}" ./start.sh
+                echo "OK" && sleep 30
+
+ check05:
+    runs-on: ubuntu-latest
+    needs: check04
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v2
+        name: Checkout
+      - name: Run Checking
+        uses: addnab/docker-run-action@v3
+        with:
+            image: ${{ secrets.CRIMAGE }}
+            run: |
+                # KEY="${{ secrets.CRKEY5 }}" ./start.sh
+                echo "OK" && sleep 30
+
+ check06:
+    runs-on: ubuntu-latest
+    needs: check05
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v2
+        name: Checkout
+      - name: Run Checking
+        uses: addnab/docker-run-action@v3
+        with:
+            image: ${{ secrets.CRIMAGE }}
+            run: |
+                # KEY="${{ secrets.CRKEY6 }}" ./start.sh
+                echo "OK" && sleep 30
+
+ check07:
+    runs-on: ubuntu-latest
+    needs: check06
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v2
+        name: Checkout
+      - name: Run Checking
+        uses: addnab/docker-run-action@v3
+        with:
+            image: ${{ secrets.CRIMAGE }}
+            run: |
+                # KEY="${{ secrets.CRKEY7 }}" ./start.sh
+                echo "OK" && sleep 30
+
+ check08:
+    runs-on: ubuntu-latest
+    needs: check07
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v2
+        name: Checkout
+      - name: Run Checking
+        uses: addnab/docker-run-action@v3
+        with:
+            image: ${{ secrets.CRIMAGE }}
+            run: |
+                # KEY="${{ secrets.CRKEY8 }}" ./start.sh
+                echo "OK" && sleep 30
+
+ check09:
+    runs-on: ubuntu-latest
+    needs: check08
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v2
+        name: Checkout
+      - name: Run Checking
+        uses: addnab/docker-run-action@v3
+        with:
+            image: ${{ secrets.CRIMAGE }}
+            run: |
+                # KEY="${{ secrets.CRKEY9 }}" ./start.sh
+                echo "OK" && sleep 30
+
+ check10:
+    runs-on: ubuntu-latest
+    needs: check09
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v2
+        name: Checkout
+      - name: Run Checking
+        uses: addnab/docker-run-action@v3
+        with:
+            image: ${{ secrets.CRIMAGE }}
+            run: |
+                # KEY="${{ secrets.CRKEY10 }}" ./start.sh
+                echo "OK" && sleep 30
