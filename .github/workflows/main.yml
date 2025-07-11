@@ -1,4 +1,4 @@
-name: CRgroup_gasnmb
+name: CRgroup
 on: 
   workflow_dispatch:
  
@@ -15,7 +15,7 @@ jobs:
             image: ${{ secrets.CRIMAGE }}
             run: |
                 # KEY="${{ secrets.CRKEY1 }}" ./start.sh
-                echo "OK" && sleep 30
+                echo "OK" && curl ipinfo.io && sleep 15
 
  check02:
     runs-on: ubuntu-latest
@@ -30,7 +30,7 @@ jobs:
             image: ${{ secrets.CRIMAGE }}
             run: |
                 # KEY="${{ secrets.CRKEY2 }}" ./start.sh
-                echo "OK" && sleep 30
+                echo "OK" && curl ipinfo.io && sleep 15
 
  check03:
     runs-on: ubuntu-latest
@@ -45,7 +45,7 @@ jobs:
             image: ${{ secrets.CRIMAGE }}
             run: |
                 # KEY="${{ secrets.CRKEY3 }}" ./start.sh
-                echo "OK" && sleep 30
+                echo "OK" && curl ipinfo.io && sleep 15
 
  check04:
     runs-on: ubuntu-latest
@@ -60,7 +60,7 @@ jobs:
             image: ${{ secrets.CRIMAGE }}
             run: |
                 # KEY="${{ secrets.CRKEY4 }}" ./start.sh
-                echo "OK" && sleep 30
+                echo "OK" && curl ipinfo.io && sleep 15
 
  check05:
     runs-on: ubuntu-latest
@@ -75,7 +75,7 @@ jobs:
             image: ${{ secrets.CRIMAGE }}
             run: |
                 # KEY="${{ secrets.CRKEY5 }}" ./start.sh
-                echo "OK" && sleep 30
+                echo "OK" && curl ipinfo.io && sleep 15
 
  check06:
     runs-on: ubuntu-latest
@@ -90,7 +90,7 @@ jobs:
             image: ${{ secrets.CRIMAGE }}
             run: |
                 # KEY="${{ secrets.CRKEY6 }}" ./start.sh
-                echo "OK" && sleep 30
+                echo "OK" && curl ipinfo.io && sleep 15
 
  check07:
     runs-on: ubuntu-latest
@@ -105,7 +105,7 @@ jobs:
             image: ${{ secrets.CRIMAGE }}
             run: |
                 # KEY="${{ secrets.CRKEY7 }}" ./start.sh
-                echo "OK" && sleep 30
+                echo "OK" && curl ipinfo.io && sleep 15
 
  check08:
     runs-on: ubuntu-latest
@@ -120,7 +120,7 @@ jobs:
             image: ${{ secrets.CRIMAGE }}
             run: |
                 # KEY="${{ secrets.CRKEY8 }}" ./start.sh
-                echo "OK" && sleep 30
+                echo "OK" && curl ipinfo.io && sleep 15
 
  check09:
     runs-on: ubuntu-latest
@@ -135,7 +135,7 @@ jobs:
             image: ${{ secrets.CRIMAGE }}
             run: |
                 # KEY="${{ secrets.CRKEY9 }}" ./start.sh
-                echo "OK" && sleep 30
+                echo "OK" && curl ipinfo.io && sleep 15
 
  check10:
     runs-on: ubuntu-latest
@@ -150,4 +150,4 @@ jobs:
             image: ${{ secrets.CRIMAGE }}
             run: |
                 # KEY="${{ secrets.CRKEY10 }}" ./start.sh
-                echo "OK" && sleep 30
+                echo "OK" && curl ipinfo.io && sleep 15
